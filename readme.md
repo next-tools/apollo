@@ -73,6 +73,8 @@ This does NOT use `getDataFromTree`
        initApolloState: apolloClient.cache.extract()
      };
    };
+
+   export default Page;
    ```
 
    ```js
@@ -99,6 +101,8 @@ This does NOT use `getDataFromTree`
        }
      };
    }
+
+   export default Page;
    ```
 
    ```js
@@ -125,4 +129,6 @@ This does NOT use `getDataFromTree`
        }
      };
    }
+
+   export default Page;
    ```
