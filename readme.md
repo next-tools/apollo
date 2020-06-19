@@ -17,9 +17,9 @@ This does NOT use `getDataFromTree`
    import { ApolloClient } from "apollo-client";
    import { InMemoryCache } from "apollo-cache-inmemory";
    import { HttpLink } from "apollo-link-http";
-   import nextjsApollo from "next-js-apollo";
+   import nextApollo from "@next-tools/apollo";
 
-   export const { initApollo, useApollo } = nextjsApollo(function () {
+   export const { initApollo, useApollo } = nextApollo(function () {
      return new ApolloClient({
        ssrMode: typeof window === "undefined",
        link: new HttpLink({
