@@ -1,10 +1,14 @@
 {
   "name": "@next-tools/apollo",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "generate initApollo and useApollo to use in next js",
   "main": "dist.js",
   "scripts": {
     "build": "npx babel src.js --out-file dist.js --minified"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/next-tools/apollo.git"
   },
   "author": "",
   "license": "ISC",
