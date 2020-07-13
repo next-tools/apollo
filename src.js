@@ -3,8 +3,8 @@ import { useMemo } from "react";
 export default function (createApolloClient) {
   let apolloClient;
 
-  const initApollo = function (initState = null) {
-    const _apolloClient = apolloClient ?? createApolloClient();
+  const initApollo = function (initState = null, opts) {
+    const _apolloClient = apolloClient ?? createApolloClient(opts);
 
     if (initState) {
       _apolloClient.cache.restore(initState);
@@ -21,8 +21,11 @@ export default function (createApolloClient) {
     return _apolloClient;
   };
 
-  const useApollo = function (initState) {
-    const apolloClient = useMemo(() => initApollo(initState), [initState]);
+  const useApollo = function (initState, opts) {
+    const apolloClient = useMemo(() => initApollo(initState, opts), [
+      initState,
+      opts
+    ]);
 
     return apolloClient;
   };
