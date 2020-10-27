@@ -1,6 +1,6 @@
 {
   "name": "@next-tools/apollo",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "generate initApollo and useApollo to use in next js",
   "main": "dist.js",
   "scripts": {
@@ -23,9 +23,9 @@
     "apollo with next"
   ],
   "peerDependencies": {
-    "next": "^9.0.0",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0"
+    "next": ">= 9.0.0",
+    "react": ">= 16.6.0",
+    "react-dom": ">= 16.6.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
